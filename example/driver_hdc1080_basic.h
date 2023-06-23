@@ -53,7 +53,7 @@ extern "C"{
 /**
  * @brief hdc1080 basic example default definition
  */
-#define HDC1080_BASIC_DEFAULT_HEATER                         HDC1080_BOOL_TRUE                            /**< enable heater */
+#define HDC1080_BASIC_DEFAULT_HEATER                         HDC1080_BOOL_FALSE                           /**< disable heater */
 #define HDC1080_BASIC_DEFAULT_MODE                           HDC1080_MODE_SEQUENCE                        /**< temperature and humidity are acquired in sequence */
 #define HDC1080_BASIC_DEFAULT_TEMPERATURE_RESOLUTION         HDC1080_TEMPERATURE_RESOLUTION_14_BIT        /**< 14 bit */
 #define HDC1080_BASIC_DEFAULT_HUMIDITY_RESOLUTION            HDC1080_HUMIDITY_RESOLUTION_14_BIT           /**< 14 bit */
