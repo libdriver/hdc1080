@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver HDC1080
- * @brief     libdriver hdc1080 is a full function driver of hdc1080 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver HDC1080 is a full function driver of HDC1080 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
