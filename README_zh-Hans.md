@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/hdc1080/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-HDC1080是一款具有集成温度传感器的数字湿度传感器，其能够以超低功耗提供出色的测量精度。HDC1080支持较宽的工作电源电压范围，并且相比竞争解决方案，该器件可为各类常见应用提供低成本和低功耗 优势。湿度和温度传感器均经过出厂校准。
+HDC1080是一款具有集成温度传感器的数字湿度传感器，其能够以超低功耗提供出色的测量精度。HDC1080支持较宽的工作电源电压范围，并且相比竞争解决方案，该器件可为各类常见应用提供低成本和低功耗优势。湿度和温度传感器均经过出厂校准。
 
 LibDriver HDC1080是LibDriver推出的HDC1080全功能驱动，该驱动提供温度、相对湿度读取的功能并且它符合MISRA标准。
 
