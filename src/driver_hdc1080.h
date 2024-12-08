@@ -147,64 +147,64 @@ typedef struct hdc1080_info_s
 
 /**
  * @brief     initialize hdc1080_handle_t structure
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] STRUCTURE is hdc1080_handle_t
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] STRUCTURE hdc1080_handle_t
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_INIT(HANDLE, STRUCTURE)             memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link iic_init function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to an iic_init function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to an iic_init function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_IIC_INIT(HANDLE, FUC)              (HANDLE)->iic_init = FUC
 
 /**
  * @brief     link iic_deinit function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to an iic_deinit function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to an iic_deinit function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_IIC_DEINIT(HANDLE, FUC)            (HANDLE)->iic_deinit = FUC
 
 /**
  * @brief     link iic_read function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to an iic_read function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to an iic_read function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_IIC_READ(HANDLE, FUC)              (HANDLE)->iic_read = FUC
 
 /**
  * @brief     link iic_read_with_wait function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to an iic_read_with_wait function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to an iic_read_with_wait function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_IIC_READ_WITH_WAIT(HANDLE, FUC)    (HANDLE)->iic_read_with_wait = FUC
 
 /**
  * @brief     link iic_write function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to an iic_write function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to an iic_write function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_IIC_WRITE(HANDLE, FUC)             (HANDLE)->iic_write = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_DELAY_MS(HANDLE, FUC)              (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to an hdc1080 handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to an hdc1080 handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_HDC1080_LINK_DEBUG_PRINT(HANDLE, FUC)           (HANDLE)->debug_print = FUC
@@ -222,7 +222,7 @@ typedef struct hdc1080_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an hdc1080 info structure
+ * @param[out] *info pointer to an hdc1080 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -232,7 +232,7 @@ uint8_t hdc1080_info(hdc1080_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an hdc1080 handle structure
+ * @param[in] *handle pointer to an hdc1080 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic init failed
@@ -247,7 +247,7 @@ uint8_t hdc1080_init(hdc1080_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an hdc1080 handle structure
+ * @param[in] *handle pointer to an hdc1080 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 deinit failed
@@ -259,11 +259,11 @@ uint8_t hdc1080_deinit(hdc1080_handle_t *handle);
 
 /**
  * @brief      read the temperature and humidity data
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_s points to a converted temperature buffer
- * @param[out] *humidity_raw points to a raw humidity buffer
- * @param[out] *humidity_s points to a converted humidity buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_s pointer to a converted temperature buffer
+ * @param[out] *humidity_raw pointer to a raw humidity buffer
+ * @param[out] *humidity_s pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read temperature humidity failed
@@ -276,9 +276,9 @@ uint8_t hdc1080_read_temperature_humidity(hdc1080_handle_t *handle, uint16_t *te
 
 /**
  * @brief      read the temperature
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *temperature_raw points to a raw temperature buffer
- * @param[out] *temperature_s points to a converted temperature buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *temperature_raw pointer to a raw temperature buffer
+ * @param[out] *temperature_s pointer to a converted temperature buffer
  * @return     status code
  *             - 0 success
  *             - 1 read temperature failed
@@ -290,9 +290,9 @@ uint8_t hdc1080_read_temperature(hdc1080_handle_t *handle, uint16_t *temperature
 
 /**
  * @brief      read the humidity data
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *humidity_raw points to a raw humidity buffer
- * @param[out] *humidity_s points to a converted humidity buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *humidity_raw pointer to a raw humidity buffer
+ * @param[out] *humidity_s pointer to a converted humidity buffer
  * @return     status code
  *             - 0 success
  *             - 1 read humidity failed
@@ -304,7 +304,7 @@ uint8_t hdc1080_read_humidity(hdc1080_handle_t *handle, uint16_t *humidity_raw, 
 
 /**
  * @brief     software reset
- * @param[in] *handle points to an hdc1080 handle structure
+ * @param[in] *handle pointer to an hdc1080 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 software reset failed
@@ -316,8 +316,8 @@ uint8_t hdc1080_software_reset(hdc1080_handle_t *handle);
 
 /**
  * @brief     enable or disable heater
- * @param[in] *handle points to an hdc1080 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to an hdc1080 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set heater failed
@@ -329,8 +329,8 @@ uint8_t hdc1080_set_heater(hdc1080_handle_t *handle, hdc1080_bool_t enable);
 
 /**
  * @brief      get the heater status
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 get heater failed
@@ -342,8 +342,8 @@ uint8_t hdc1080_get_heater(hdc1080_handle_t *handle, hdc1080_bool_t *enable);
 
 /**
  * @brief     set the chip mode
- * @param[in] *handle points to an hdc1080 handle structure
- * @param[in] mode is the set mode
+ * @param[in] *handle pointer to an hdc1080 handle structure
+ * @param[in] mode chip mode
  * @return    status code
  *            - 0 success
  *            - 1 set mode failed
@@ -355,8 +355,8 @@ uint8_t hdc1080_set_mode(hdc1080_handle_t *handle, hdc1080_mode_t mode);
 
 /**
  * @brief      get the chip mode
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *mode points to a mode buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *mode pointer to a mode buffer
  * @return     status code
  *             - 0 success
  *             - 1 get mode failed
@@ -368,8 +368,8 @@ uint8_t hdc1080_get_mode(hdc1080_handle_t *handle, hdc1080_mode_t *mode);
 
 /**
  * @brief      get battery status
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *status points to a battery status buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *status pointer to a battery status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get battery status failed
@@ -381,8 +381,8 @@ uint8_t hdc1080_get_battery_status(hdc1080_handle_t *handle, hdc1080_battery_sta
 
 /**
  * @brief     set temperature resolution
- * @param[in] *handle points to an hdc1080 handle structure
- * @param[in] resolution is the temperature resolution
+ * @param[in] *handle pointer to an hdc1080 handle structure
+ * @param[in] resolution temperature resolution
  * @return    status code
  *            - 0 success
  *            - 1 set temperature resolution failed
@@ -394,8 +394,8 @@ uint8_t hdc1080_set_temperature_resolution(hdc1080_handle_t *handle, hdc1080_tem
 
 /**
  * @brief      get temperature resolution
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *resolution points to a temperature resolution buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *resolution pointer to a temperature resolution buffer
  * @return     status code
  *             - 0 success
  *             - 1 get temperature resolution failed
@@ -407,8 +407,8 @@ uint8_t hdc1080_get_temperature_resolution(hdc1080_handle_t *handle, hdc1080_tem
 
 /**
  * @brief     set humidity resolution
- * @param[in] *handle points to an hdc1080 handle structure
- * @param[in] resolution is the humidity resolution
+ * @param[in] *handle pointer to an hdc1080 handle structure
+ * @param[in] resolution humidity resolution
  * @return    status code
  *            - 0 success
  *            - 1 set humidity resolution failed
@@ -420,8 +420,8 @@ uint8_t hdc1080_set_humidity_resolution(hdc1080_handle_t *handle, hdc1080_humidi
 
 /**
  * @brief      get humidity resolution
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *resolution points to a humidity resolution buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *resolution pointer to a humidity resolution buffer
  * @return     status code
  *             - 0 success
  *             - 1 get humidity resolution failed
@@ -433,8 +433,8 @@ uint8_t hdc1080_get_humidity_resolution(hdc1080_handle_t *handle, hdc1080_humidi
 
 /**
  * @brief      get serial id
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[out] *id points to an id buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[out] *id pointer to an id buffer
  * @return     status code
  *             - 0 success
  *             - 1 get serial id failed
@@ -457,9 +457,9 @@ uint8_t hdc1080_get_serial_id(hdc1080_handle_t *handle, uint8_t id[6]);
 
 /**
  * @brief     set chip register
- * @param[in] *handle points to an hdc1080 handle structure
- * @param[in] reg is the write register address
- * @param[in] data is the write data
+ * @param[in] *handle pointer to an hdc1080 handle structure
+ * @param[in] reg register address
+ * @param[in] data written data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -471,9 +471,9 @@ uint8_t hdc1080_set_reg(hdc1080_handle_t *handle, uint8_t reg, uint16_t data);
 
 /**
  * @brief      get chip register
- * @param[in]  *handle points to an hdc1080 handle structure
- * @param[in]  reg is the read register address
- * @param[out] *data points to a data buffer
+ * @param[in]  *handle pointer to an hdc1080 handle structure
+ * @param[in]  reg register address
+ * @param[out] *data pointer to a data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
