@@ -376,7 +376,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -422,8 +422,8 @@ Functions</h2></td></tr>
 <p>get battery status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a battery status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a battery status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -469,8 +469,8 @@ Functions</h2></td></tr>
 <p>get the heater status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool value buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,8 +516,8 @@ Functions</h2></td></tr>
 <p>get humidity resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>points to a humidity resolution buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>pointer to a humidity resolution buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -563,8 +563,8 @@ Functions</h2></td></tr>
 <p>get the chip mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>points to a mode buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*mode</td><td>pointer to a mode buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -610,8 +610,8 @@ Functions</h2></td></tr>
 <p>get serial id </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*id</td><td>points to an id buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*id</td><td>pointer to an id buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -657,8 +657,8 @@ Functions</h2></td></tr>
 <p>get temperature resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>points to a temperature resolution buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*resolution</td><td>pointer to a temperature resolution buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -694,7 +694,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an hdc1080 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an hdc1080 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -728,7 +728,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -783,9 +783,9 @@ Functions</h2></td></tr>
 <p>read the humidity data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>points to a raw humidity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>points to a converted humidity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>pointer to a raw humidity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>pointer to a converted humidity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -837,9 +837,9 @@ Functions</h2></td></tr>
 <p>read the temperature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>points to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>pointer to a converted temperature buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -903,11 +903,11 @@ Functions</h2></td></tr>
 <p>read the temperature and humidity data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>points to a raw temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>points to a converted temperature buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>points to a raw humidity buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>points to a converted humidity buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_raw</td><td>pointer to a raw temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*temperature_s</td><td>pointer to a converted temperature buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_raw</td><td>pointer to a raw humidity buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*humidity_s</td><td>pointer to a converted humidity buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -953,8 +953,8 @@ Functions</h2></td></tr>
 <p>enable or disable heater </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -1000,8 +1000,8 @@ Functions</h2></td></tr>
 <p>set humidity resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>is the humidity resolution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>humidity resolution </td></tr>
   </table>
   </dd>
 </dl>
@@ -1047,8 +1047,8 @@ Functions</h2></td></tr>
 <p>set the chip mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the set mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>chip mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -1094,8 +1094,8 @@ Functions</h2></td></tr>
 <p>set temperature resolution </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>is the temperature resolution </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>temperature resolution </td></tr>
   </table>
   </dd>
 </dl>
@@ -1131,7 +1131,7 @@ Functions</h2></td></tr>
 <p>software reset </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an hdc1080 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an hdc1080 handle structure </td></tr>
   </table>
   </dd>
 </dl>
