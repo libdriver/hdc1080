@@ -1,25 +1,5 @@
 var searchData=
 [
-  ['debug_5fprint_2',['debug_print',['../structhdc1080__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b',1,'hdc1080_handle_s']]],
-  ['delay_5fms_3',['delay_ms',['../structhdc1080__handle__s.html#a406c9433252b7366de417b7a60915c81',1,'hdc1080_handle_s']]],
-  ['driver_5fhdc1080_2ec_4',['driver_hdc1080.c',['../driver__hdc1080_8c.html',1,'']]],
-  ['driver_5fhdc1080_2eh_5',['driver_hdc1080.h',['../driver__hdc1080_8h.html',1,'']]],
-  ['driver_5fhdc1080_5fbasic_2ec_6',['driver_hdc1080_basic.c',['../driver__hdc1080__basic_8c.html',1,'']]],
-  ['driver_5fhdc1080_5fbasic_2eh_7',['driver_hdc1080_basic.h',['../driver__hdc1080__basic_8h.html',1,'']]],
-  ['driver_5fhdc1080_5finterface_2eh_8',['driver_hdc1080_interface.h',['../driver__hdc1080__interface_8h.html',1,'']]],
-  ['driver_5fhdc1080_5finterface_5ftemplate_2ec_9',['driver_hdc1080_interface_template.c',['../driver__hdc1080__interface__template_8c.html',1,'']]],
-  ['driver_5fhdc1080_5flink_5fdebug_5fprint_10',['DRIVER_HDC1080_LINK_DEBUG_PRINT',['../group__hdc1080__link__driver.html#ga59d9ec635131d6dfbef7c3277eac35c0',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fdelay_5fms_11',['DRIVER_HDC1080_LINK_DELAY_MS',['../group__hdc1080__link__driver.html#ga3da8b811a40b4bbb867c5e67ab6e36a8',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fiic_5fdeinit_12',['DRIVER_HDC1080_LINK_IIC_DEINIT',['../group__hdc1080__link__driver.html#gadc8554a92da8cc47ce7e407550953f65',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fiic_5finit_13',['DRIVER_HDC1080_LINK_IIC_INIT',['../group__hdc1080__link__driver.html#ga788851585c184ba1c4626659d79e6514',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fiic_5fread_14',['DRIVER_HDC1080_LINK_IIC_READ',['../group__hdc1080__link__driver.html#ga46cee7c951096db4632461fcb72ee787',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fiic_5fread_5fwith_5fwait_15',['DRIVER_HDC1080_LINK_IIC_READ_WITH_WAIT',['../group__hdc1080__link__driver.html#ga86b39beb7927507e0c5b114371272e0c',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5fiic_5fwrite_16',['DRIVER_HDC1080_LINK_IIC_WRITE',['../group__hdc1080__link__driver.html#ga3bd5115c456dbdeac3a2297035273e52',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5flink_5finit_17',['DRIVER_HDC1080_LINK_INIT',['../group__hdc1080__link__driver.html#gae0d6567946614cebefef53950f7ed658',1,'driver_hdc1080.h']]],
-  ['driver_5fhdc1080_5fread_5ftest_2ec_18',['driver_hdc1080_read_test.c',['../driver__hdc1080__read__test_8c.html',1,'']]],
-  ['driver_5fhdc1080_5fread_5ftest_2eh_19',['driver_hdc1080_read_test.h',['../driver__hdc1080__read__test_8h.html',1,'']]],
-  ['driver_5fhdc1080_5fregister_5ftest_2ec_20',['driver_hdc1080_register_test.c',['../driver__hdc1080__register__test_8c.html',1,'']]],
-  ['driver_5fhdc1080_5fregister_5ftest_2eh_21',['driver_hdc1080_register_test.h',['../driver__hdc1080__register__test_8h.html',1,'']]],
-  ['driver_5fversion_22',['driver_version',['../structhdc1080__info__s.html#a41b0bd442708b70d252c50b92c75265a',1,'hdc1080_info_s']]],
-  ['driver_5fversion_23',['DRIVER_VERSION',['../driver__hdc1080_8c.html#ae578001fe043b4cca7a0edd801cfe9c4',1,'driver_hdc1080.c']]]
+  ['chip_5fname_0',['CHIP_NAME',['../driver__hdc1080_8c.html#adc9da0a24824ca1239b593f6459b3954',1,'driver_hdc1080.c']]],
+  ['chip_5fname_1',['chip_name',['../structhdc1080__info__s.html#af890958c72bd715cc6454a10dc846ae6',1,'hdc1080_info_s']]]
 ];
