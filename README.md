@@ -10,7 +10,7 @@
 
 The HDC1080 is a digital humidity sensor with integrated temperature sensor that provides excellent measurement accuracy at very low power. The HDC1080 operates over a wide supply range, and is a low cost, low power alternative to competitive solutions in a wide range of common applications. The humidity and temperature sensors are factory calibrated.
 
-LibDriver HDC1080 is a full-featured driver of HDC1080 launched by LibDriver.It provides the function of reading temperature and relative humidity. LibDriver is MISRA compliant.
+LibDriver HDC1080 is a full-featured driver for HDC1080, launched by LibDriver.It provides temperature reading, relative humidity reading and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
